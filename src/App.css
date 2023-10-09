@@ -1,0 +1,119 @@
+html{
+  font-size: 16px;
+}
+body{
+  background-image: url('./img/weather.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+  backdrop-filter: blur(0.5rem);   
+}
+h1{
+  font-size: 30px;
+  color: azure;
+  margin-top: 0;
+  
+}
+.center-container{
+  color: azure;
+  font-family: Arial, sans-serif;
+  padding:1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.container{
+    display:flex;
+    flex-direction: column;  
+}
+select{ 
+  width: auto;
+  border-radius: 0.5rem;
+  background-color: #ecf0f1; 
+  font-size: 1rem;
+  margin: 0 auto;
+}
+label{
+  font-weight: bold;
+  margin-bottom:5px;
+}
+.card{
+  border: 1px solid #ddd;
+  padding:1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 25rem;
+  margin:0 auto;
+  margin-top: 1.5rem;
+  border-radius: 0.7rem;
+  background-image: url('C:\Users\jwala\weather app\src\img\hot.jpg');
+  background-size: cover;
+  background-position: center;
+  height:31rem;
+}
+p{
+  margin-top: 0.75rem;
+}
+h2{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.section{
+  border: 1px solid #ecf0f1;
+  padding :1rem;
+  background-color: rgba(0,0,0, 0.5);
+  color: white;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.section1{
+  display: flex;
+  justify-content: space-between;
+}
+.section1_section{
+  border: 1px solid #ecf0f1;
+  padding:1.2rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 auto;
+  margin-top: 1.2rem;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  text-align: center;
+  border-radius:0.5rem;
+  margin-bottom: 0.6rem;
+  margin-left: 1.5rem;
+  height: 2.1rem;
+  
+}
+.section1_section p{
+  font-size: 0.5rem;
+  margin-top: 0.3rem;
+}
+.section1_section h2{
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+
+@media screen and (max-width:768px){
+  .container.mobile{
+    padding: 0.5rem;
+    font-size:14px;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+  .container.tablet{
+    padding: 1rem;
+    font-size: 18px;
+  }
+}
+.error-message{
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
